@@ -290,12 +290,12 @@
     Problem 1
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor} }]:} \PY{c+c1}{\PYZsh{}original function}
-        \PY{k}{def} \PY{n+nf}{smallest\PYZus{}factor}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
-            \PY{k}{if} \PY{n}{n} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{:} \PY{k}{return} \PY{l+m+mi}{1}
-            \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{n}\PY{o}{*}\PY{o}{*}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}\PY{p}{:}
-               \PY{n}{f} \PY{n}{n} \PY{o}{\PYZpc{}} \PY{n}{i} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:} \PY{k}{return} \PY{n}{i}
-            \PY{k}{return} \PY{n}{n}
+{\color{incolor}In [{\color{incolor}11}]:} \PY{c+c1}{\PYZsh{}original function}
+         \PY{k}{def} \PY{n+nf}{smallest\PYZus{}factor}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+             \PY{k}{if} \PY{n}{n} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{:} \PY{k}{return} \PY{l+m+mi}{1}
+             \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{n}\PY{o}{*}\PY{o}{*}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                 \PY{k}{if} \PY{n}{n} \PY{o}{\PYZpc{}} \PY{n}{i} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:} \PY{k}{return} \PY{n}{i}
+             \PY{k}{return} \PY{n}{n}
 \end{Verbatim}
 
 
@@ -312,95 +312,109 @@
 
 
     Below is the pytest result:
- ============================= test session starts ==============================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                            
 
-test_month_length.py .                                                   [  0%]
-test_oper.py .                                                           [  0%]
-test_r.py .............................................................. [ 25%]
-........................................................................ [ 55%]
-........................................................................ [ 84%]
-......................................                                   [ 99%]
-test_sf.py F                                                             [100%]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:}  \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                            
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                   \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                           \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{25}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{55}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{84}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                                   \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{n}{F}                                                             \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=} \PY{n}{FAILURES} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}} \PY{n}{test\PYZus{}sf} \PY{n}{\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}\PYZus{}}
+        
+            \PY{k}{def} \PY{n+nf}{test\PYZus{}sf}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+                \PY{k}{assert} \PY{n}{smallest\PYZus{}factor}\PY{o}{.}\PY{n}{smallest\PYZus{}factor}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{failed on 1}\PY{l+s+s2}{\PYZdq{}}
+        \PY{o}{\PYZgt{}}       \PY{k}{assert} \PY{n}{smallest\PYZus{}factor}\PY{o}{.}\PY{n}{smallest\PYZus{}factor}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)} \PY{o}{==} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{failed on square number}\PY{l+s+s2}{\PYZdq{}}
+        \PY{n}{E}       \PY{n+ne}{AssertionError}\PY{p}{:} \PY{n}{failed} \PY{n}{on} \PY{n}{square} \PY{n}{number}
+        \PY{n}{E}       \PY{k}{assert} \PY{l+m+mi}{4} \PY{o}{==} \PY{l+m+mi}{2}
+        \PY{n}{E}        \PY{o}{+}  \PY{n}{where} \PY{l+m+mi}{4} \PY{o}{=} \PY{o}{\PYZlt{}}\PY{n}{function} \PY{n}{smallest\PYZus{}factor} \PY{n}{at} \PY{l+m+mh}{0x1045938c8}\PY{o}{\PYZgt{}}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)}
+        \PY{n}{E}        \PY{o}{+}    \PY{n}{where} \PY{o}{\PYZlt{}}\PY{n}{function} \PY{n}{smallest\PYZus{}factor} \PY{n}{at} \PY{l+m+mh}{0x1045938c8}\PY{o}{\PYZgt{}} \PY{o}{=} \PY{n}{smallest\PYZus{}factor}\PY{o}{.}\PY{n}{smallest\PYZus{}factor}
+        
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py}\PY{p}{:}\PY{l+m+mi}{5}\PY{p}{:} \PY{n+ne}{AssertionError}
+        \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=} \PY{l+m+mi}{1} \PY{n}{failed}\PY{p}{,} \PY{l+m+mi}{246} \PY{n}{passed} \PY{o+ow}{in} \PY{l+m+mf}{0.51} \PY{n}{seconds} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+\end{Verbatim}
 
-=================================== FAILURES ===================================
-___________________________________ test_sf ____________________________________
 
-    def test_sf():
-        assert smallest_factor.smallest_factor(1) == 1, "failed on 1"
->       assert smallest_factor.smallest_factor(4) == 2, "failed on square number"
-E       AssertionError: failed on square number
-E       assert 4 == 2
-E        +  where 4 = <function smallest_factor at 0x1045938c8>(4)
-E        +    where <function smallest_factor at 0x1045938c8> = smallest_factor.smallest_factor
-
-test_sf.py:5: AssertionError
-===================== 1 failed, 246 passed in 0.51 seconds =====================
     I noticed that it failed on 4. This is because 2 is not in the range of
 int(4 ** 0.5). Thus I modified the original function as follows:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor} }]:} \PY{c+c1}{\PYZsh{}modified function}
-        \PY{k}{def} \PY{n+nf}{smallest\PYZus{}factor}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
-            \PY{k}{if} \PY{n}{n} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{:} \PY{k}{return} \PY{l+m+mi}{1}
-            \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{n}\PY{o}{*}\PY{o}{*}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}\PY{p}{:}
-               \PY{n}{f} \PY{n}{n} \PY{o}{\PYZpc{}} \PY{n}{i} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:} \PY{k}{return} \PY{n}{i}
-            \PY{k}{return} \PY{n}{n}
+{\color{incolor}In [{\color{incolor}10}]:} \PY{c+c1}{\PYZsh{}modified function}
+         \PY{k}{def} \PY{n+nf}{smallest\PYZus{}factor}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+             \PY{k}{if} \PY{n}{n} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{:} \PY{k}{return} \PY{l+m+mi}{1}
+             \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{n}\PY{o}{*}\PY{o}{*}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                 \PY{k}{if} \PY{n}{n} \PY{o}{\PYZpc{}} \PY{n}{i} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:} \PY{k}{return} \PY{n}{i}
+             \PY{k}{return} \PY{n}{n}
 \end{Verbatim}
 
 
     Now it passed all the test.
-======================================== test session starts =========================================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                                                  
 
-test_month_length.py .                                                                         [  0%]
-test_oper.py .                                                                                 [  0%]
-test_r.py .................................................................................... [ 34%]
-.............................................................................................. [ 72%]
-..................................................................                             [ 99%]
-test_sf.py .                                                                                   [100%]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                                                  
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                         \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                 \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{34}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{72}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                             \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                   \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=} \PY{l+m+mi}{247} \PY{n}{passed} \PY{o+ow}{in} \PY{l+m+mf}{0.46} \PY{n}{seconds} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}
+\end{Verbatim}
 
-===================================== 247 passed in 0.46 seconds ====================================
+
     Problem 2
-======================================== test session starts =========================================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                                                  
 
-test_month_length.py .                                                                         [  0%]
-test_oper.py .                                                                                 [  0%]
-test_r.py .................................................................................... [ 34%]
-.............................................................................................. [ 72%]
-..................................................................                             [ 99%]
-test_sf.py .                                                                                   [100%]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                                                  
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                         \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                 \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{34}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{72}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                             \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                   \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{coverage}\PY{p}{:} \PY{n}{platform} \PY{n}{darwin}\PY{p}{,} \PY{n}{python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{o}{\PYZhy{}}\PY{n}{final}\PY{o}{\PYZhy{}}\PY{l+m+mi}{0} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{Name}                   \PY{n}{Stmts}   \PY{n}{Miss}  \PY{n}{Cover}
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{get\PYZus{}r}\PY{o}{.}\PY{n}{py}                  \PY{l+m+mi}{24}     \PY{l+m+mi}{11}    \PY{l+m+mi}{54}\PY{o}{\PYZpc{}}
+        \PY{n}{month\PYZus{}length}\PY{o}{.}\PY{n}{py}           \PY{l+m+mi}{10}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{oper}\PY{o}{.}\PY{n}{py}                   \PY{l+m+mi}{14}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{smallest\PYZus{}factor}\PY{o}{.}\PY{n}{py}         \PY{l+m+mi}{5}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py}       \PY{l+m+mi}{7}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py}              \PY{l+m+mi}{16}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py}                 \PY{l+m+mi}{29}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py}                 \PY{l+m+mi}{6}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{TOTAL}                    \PY{l+m+mi}{111}     \PY{l+m+mi}{11}    \PY{l+m+mi}{90}\PY{o}{\PYZpc{}}
+\end{Verbatim}
 
----------- coverage: platform darwin, python 3.6.5-final-0 -----------
-Name                   Stmts   Miss  Cover
-------------------------------------------
-get_r.py                  24     11    54%
-month_length.py           10      0   100%
-oper.py                   14      0   100%
-smallest_factor.py         5      0   100%
-test_month_length.py       7      0   100%
-test_oper.py              16      0   100%
-test_r.py                 29      0   100%
-test_sf.py                 6      0   100%
-------------------------------------------
-TOTAL                    111     11    90%
 
     My smallest\_factor function already got full coverage.
 
     This is the month\_length function:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor} }]:} \PY{k}{def} \PY{n+nf}{month\PYZus{}length}\PY{p}{(}\PY{n}{month}\PY{p}{,} \PY{n}{leap\PYZus{}year}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{p}{:}
+{\color{incolor}In [{\color{incolor}4}]:} \PY{k}{def} \PY{n+nf}{month\PYZus{}length}\PY{p}{(}\PY{n}{month}\PY{p}{,} \PY{n}{leap\PYZus{}year}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{p}{:}
         	\PY{k}{if} \PY{n}{month} \PY{o+ow}{in} \PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{September}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{April}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{June}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{November}\PY{l+s+s2}{\PYZdq{}}\PY{p}{\PYZcb{}}\PY{p}{:}
         		\PY{k}{return} \PY{l+m+mi}{30}
         	\PY{k}{elif} \PY{n}{month} \PY{o+ow}{in} \PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{January}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{March}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{May}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{July}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PYZbs{}
@@ -436,20 +450,25 @@ TOTAL                    111     11    90%
 
 
     This is my test result:
-======================================== test session starts =========================================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                                                  
 
-test_month_length.py .                                                                         [  0%]
-test_oper.py .                                                                                 [  0%]
-test_r.py .................................................................................... [ 34%]
-.............................................................................................. [ 72%]
-..................................................................                             [ 99%]
-test_sf.py .                                                                                   [100%]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                                                  
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                         \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                 \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{34}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{72}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                             \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                   \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=} \PY{l+m+mi}{247} \PY{n}{passed} \PY{o+ow}{in} \PY{l+m+mf}{0.46} \PY{n}{seconds} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}
+\end{Verbatim}
 
-===================================== 247 passed in 0.46 seconds ====================================
+
     Problem 3
 
     This is the operate function:
@@ -496,45 +515,45 @@ test_sf.py .                                                                    
 
 
     I got full coverage of oper.py.
-======================================== test session starts =========================================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                                                  
-
-test_month_length.py .                                                                         [  0%]
-test_oper.py .                                                                                 [  0%]
-test_r.py .................................................................................... [ 34%]
-.............................................................................................. [ 72%]
-..................................................................                             [ 99%]
-test_sf.py .                                                                                   [100%]
-
----------- coverage: platform darwin, python 3.6.5-final-0 -----------
-Name                   Stmts   Miss  Cover
-------------------------------------------
-get_r.py                  24     11    54%
-month_length.py           10      0   100%
-oper.py                   14      0   100%
-smallest_factor.py         5      0   100%
-test_month_length.py       7      0   100%
-test_oper.py              16      0   100%
-test_r.py                 29      0   100%
-test_sf.py                 6      0   100%
-------------------------------------------
-TOTAL                    111     11    90%
-
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor} }]:} \PY{n}{The} \PY{n}{coverage} \PY{n}{report} \PY{o+ow}{is} \PY{n}{attached} \PY{o+ow}{in} \PY{n}{the} \PY{n}{folder}\PY{o}{.}
+{\color{incolor}In [{\color{incolor} }]:} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                                                  
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                         \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                 \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{34}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{72}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                             \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                   \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{coverage}\PY{p}{:} \PY{n}{platform} \PY{n}{darwin}\PY{p}{,} \PY{n}{python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{o}{\PYZhy{}}\PY{n}{final}\PY{o}{\PYZhy{}}\PY{l+m+mi}{0} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{Name}                   \PY{n}{Stmts}   \PY{n}{Miss}  \PY{n}{Cover}
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{get\PYZus{}r}\PY{o}{.}\PY{n}{py}                  \PY{l+m+mi}{24}     \PY{l+m+mi}{11}    \PY{l+m+mi}{54}\PY{o}{\PYZpc{}}
+        \PY{n}{month\PYZus{}length}\PY{o}{.}\PY{n}{py}           \PY{l+m+mi}{10}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{oper}\PY{o}{.}\PY{n}{py}                   \PY{l+m+mi}{14}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{smallest\PYZus{}factor}\PY{o}{.}\PY{n}{py}         \PY{l+m+mi}{5}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py}       \PY{l+m+mi}{7}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py}              \PY{l+m+mi}{16}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py}                 \PY{l+m+mi}{29}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py}                 \PY{l+m+mi}{6}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{TOTAL}                    \PY{l+m+mi}{111}     \PY{l+m+mi}{11}    \PY{l+m+mi}{90}\PY{o}{\PYZpc{}}
 \end{Verbatim}
 
+
+    The coverage report is attached in the folder.
 
     2 Test Driven Development
 
     This is my get\_r function:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}8}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+{\color{incolor}In [{\color{incolor}9}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
         
         \PY{k}{def} \PY{n+nf}{get\PYZus{}r}\PY{p}{(}\PY{n}{K}\PY{p}{,} \PY{n}{L}\PY{p}{,} \PY{n}{alpha}\PY{p}{,} \PY{n}{Z}\PY{p}{,} \PY{n}{delta}\PY{p}{)}\PY{p}{:}
             \PY{k}{if} \PY{n+nb}{type}\PY{p}{(}\PY{n}{K}\PY{p}{)} \PY{o+ow}{is} \PY{n+nb}{float} \PY{o+ow}{and} \PY{n}{K} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{l+m+mi}{0}\PY{p}{:}
@@ -565,47 +584,55 @@ TOTAL                    111     11    90%
 
 
     This is the pytest result:
-======================================== test session starts =========================================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                                                  
 
-test_month_length.py .                                                                         [  0%]
-test_oper.py .                                                                                 [  0%]
-test_r.py .................................................................................... [ 34%]
-.............................................................................................. [ 72%]
-..................................................................                             [ 99%]
-test_sf.py .                                                                                   [100%]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                                                  
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                         \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                 \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{34}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{72}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                             \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                   \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=} \PY{l+m+mi}{247} \PY{n}{passed} \PY{o+ow}{in} \PY{l+m+mf}{0.46} \PY{n}{seconds} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}
+\end{Verbatim}
 
-===================================== 247 passed in 0.46 seconds ====================================
+
     This is the coverage result:
-======================================== test session starts =========================================
-platform darwin -- Python 3.6.5, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-rootdir: /Users/tianxinzheng/Desktop/MACS30000/persp-analysis_A18/Assignments, inifile:
-plugins: remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, cov-2.6.0, arraydiff-0.2
-collected 247 items                                                                                  
 
-test_month_length.py .                                                                         [  0%]
-test_oper.py .                                                                                 [  0%]
-test_r.py .................................................................................... [ 34%]
-.............................................................................................. [ 72%]
-..................................................................                             [ 99%]
-test_sf.py .                                                                                   [100%]
-
----------- coverage: platform darwin, python 3.6.5-final-0 -----------
-Name                   Stmts   Miss  Cover
-------------------------------------------
-get_r.py                  24     11    54%
-month_length.py           10      0   100%
-oper.py                   14      0   100%
-smallest_factor.py         5      0   100%
-test_month_length.py       7      0   100%
-test_oper.py              16      0   100%
-test_r.py                 29      0   100%
-test_sf.py                 6      0   100%
-------------------------------------------
-TOTAL                    111     11    90%
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==} \PY{n}{test} \PY{n}{session} \PY{n}{starts} \PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{==}\PY{o}{=}
+        \PY{n}{platform} \PY{n}{darwin} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{Python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{pytest}\PY{o}{\PYZhy{}}\PY{l+m+mf}{3.5}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{py}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1.5}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{pluggy}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.6}\PY{o}{.}\PY{l+m+mi}{0}
+        \PY{n}{rootdir}\PY{p}{:} \PY{o}{/}\PY{n}{Users}\PY{o}{/}\PY{n}{tianxinzheng}\PY{o}{/}\PY{n}{Desktop}\PY{o}{/}\PY{n}{MACS30000}\PY{o}{/}\PY{n}{persp}\PY{o}{\PYZhy{}}\PY{n}{analysis\PYZus{}A18}\PY{o}{/}\PY{n}{Assignments}\PY{p}{,} \PY{n}{inifile}\PY{p}{:}
+        \PY{n}{plugins}\PY{p}{:} \PY{n}{remotedata}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}\PY{o}{.}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{openfiles}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{doctestplus}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.1}\PY{o}{.}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{cov}\PY{o}{\PYZhy{}}\PY{l+m+mf}{2.6}\PY{o}{.}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{arraydiff}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.2}
+        \PY{n}{collected} \PY{l+m+mi}{247} \PY{n}{items}                                                                                  
+        
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                         \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                 \PY{p}{[}  \PY{l+m+mi}{0}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py} \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{34}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.} \PY{p}{[} \PY{l+m+mi}{72}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}\PY{o}{.}                             \PY{p}{[} \PY{l+m+mi}{99}\PY{o}{\PYZpc{}}\PY{p}{]}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py} \PY{o}{.}                                                                                   \PY{p}{[}\PY{l+m+mi}{100}\PY{o}{\PYZpc{}}\PY{p}{]}
+        
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}} \PY{n}{coverage}\PY{p}{:} \PY{n}{platform} \PY{n}{darwin}\PY{p}{,} \PY{n}{python} \PY{l+m+mf}{3.6}\PY{o}{.}\PY{l+m+mi}{5}\PY{o}{\PYZhy{}}\PY{n}{final}\PY{o}{\PYZhy{}}\PY{l+m+mi}{0} \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{Name}                   \PY{n}{Stmts}   \PY{n}{Miss}  \PY{n}{Cover}
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{get\PYZus{}r}\PY{o}{.}\PY{n}{py}                  \PY{l+m+mi}{24}     \PY{l+m+mi}{11}    \PY{l+m+mi}{54}\PY{o}{\PYZpc{}}
+        \PY{n}{month\PYZus{}length}\PY{o}{.}\PY{n}{py}           \PY{l+m+mi}{10}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{oper}\PY{o}{.}\PY{n}{py}                   \PY{l+m+mi}{14}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{smallest\PYZus{}factor}\PY{o}{.}\PY{n}{py}         \PY{l+m+mi}{5}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}month\PYZus{}length}\PY{o}{.}\PY{n}{py}       \PY{l+m+mi}{7}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}oper}\PY{o}{.}\PY{n}{py}              \PY{l+m+mi}{16}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}r}\PY{o}{.}\PY{n}{py}                 \PY{l+m+mi}{29}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{n}{test\PYZus{}sf}\PY{o}{.}\PY{n}{py}                 \PY{l+m+mi}{6}      \PY{l+m+mi}{0}   \PY{l+m+mi}{100}\PY{o}{\PYZpc{}}
+        \PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}
+        \PY{n}{TOTAL}                    \PY{l+m+mi}{111}     \PY{l+m+mi}{11}    \PY{l+m+mi}{90}\PY{o}{\PYZpc{}}
+\end{Verbatim}
 
 
     The coverage report is attached in the folder. As the test doesn't
